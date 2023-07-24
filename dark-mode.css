@@ -1,0 +1,48 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+
+  header .nav-li a{
+    color: white;
+}
+  
+.article-1-section a {
+    color: white;
+    
+}
+
+.article-1-section {
+    color: white;
+    text-align: center;
+    margin-top: 109px;
+    margin-left: 281px;
+    width: 57%;
+    padding: 45px;
+    border: 4px solid white;
+    border-radius: 22px;
+}
+
+.article-last-section {
+    color: white;
+    text-align: center;
+    margin-top: 109px;
+    margin-left: 281px;
+    width: 57%;
+    padding: 45px;
+    border: 4px solid white;
+    border-radius: 22px;
+}
+
+.article-last-section a{
+    color: white;
+}
+
+section .pro1-name a {
+    color: white;
+}
