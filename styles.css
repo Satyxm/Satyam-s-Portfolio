@@ -102,7 +102,10 @@ body .namaste {
 .intro{
     margin-left: 130px;
     padding-top: 40px;
+    width: 50%;
 }
+
+
 
 .intro p{
     padding-top: 16px; 
