@@ -199,6 +199,14 @@ section .img-size {
     width: 60%;
 }
 
+.section-devarts {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 129px;
+    margin-left: 255px;
+    width: 60%;
+}
+
 .projects-section {
     text-align: center;
     margin-top: 109px;
