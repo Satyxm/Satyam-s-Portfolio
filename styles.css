@@ -92,8 +92,6 @@ body .namaste {
     position: relative;
 }
 
-
-
 .namaste-icon {
     height: 22px;
     width: 22px;
@@ -101,7 +99,7 @@ body .namaste {
 
 .intro{
     margin-left: 130px;
-    padding-top: 40px;
+    padding-top: 20px;
     width: 50%;
 }
 
