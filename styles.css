@@ -74,7 +74,7 @@ header .nav-li .toggle-btn {
   }
   
   header .nav-li .toggle-btn input:checked + label {
-    background-color: #52b69a;
+    background-color: greenyellow;
   }
   
   header .nav-li .toggle-btn input:checked + label:after {
