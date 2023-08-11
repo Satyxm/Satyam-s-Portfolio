@@ -4,6 +4,8 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: lighter;
 }
 
 body {
@@ -15,8 +17,7 @@ header .nav-li {
     display: flex;
     justify-content: center;
     margin-top: 42px;
-    font-family: 'Josefin Sans', sans-serif;
-
+    font-family: 'Architects Daughter', cursive;
    
 }
 
@@ -24,7 +25,6 @@ header .nav-li li{
     display: inline-block;
     padding-right: 41px;
     font-size: 16px;
-    font-weight: 850;
     position: relative;
     
 }
@@ -74,7 +74,7 @@ header .nav-li .toggle-btn {
   }
   
   header .nav-li .toggle-btn input:checked + label {
-    background-color: greenyellow;
+    background-color: orange;
   }
   
   header .nav-li .toggle-btn input:checked + label:after {
@@ -83,8 +83,8 @@ header .nav-li .toggle-btn {
   
 
 body .namaste {
-    font-family: 'Tiro Devanagari Hindi', serif;
-    font-weight: 3;
+    font-family: 'Architects Daughter', cursive;
+ 
     margin-top: 98px;
     margin-left: 130px;
     font-size: 25px;
@@ -118,6 +118,7 @@ header .nav-li i {
     font-size: 26px;
     float: left;
     cursor: pointer;
+    font-family: 'Architects Daughter', cursive;
 }
 
 /* 
@@ -125,7 +126,6 @@ This is for the projects section styling.
 */
 
 .projects-heading h1 {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 36px;
     display: flex;
     justify-content: center;
@@ -149,7 +149,6 @@ This is for the projects section styling.
 
 .projects-section div .coc-link{
     display: flex;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 36px;
     display: flex;
     justify-content: center;
@@ -228,7 +227,6 @@ section .img-size {
 
 section .pro1-name {
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
     
 }
 
@@ -270,7 +268,7 @@ header nav .nav-li .logo{
 }
 
 #quote{
-    padding-top: 250px;
+    padding-top: 139px;
     font-size: 14px;
     text-align: center;
     
@@ -291,7 +289,6 @@ header nav .toggle-btn {
 .sketch-1-heading {
     margin-top: 70px;
     font-size: 25px;
-    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     padding: 45px;
 }
@@ -302,4 +299,9 @@ header nav .toggle-btn {
 
 .sketch-1-heading p{
     padding-top: 25px;
+}
+
+.intro .typical-pfw {
+    padding-top: 95px;
+    font-size: 24px;
 }
