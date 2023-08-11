@@ -71,7 +71,9 @@ const quotes = [
     quoteElement.innerText = getRandomQuote();
   };
   
-  const toggleSwitch = document.getElementById('toggle-switch');
+  
+/* 
+const toggleSwitch = document.getElementById('toggle-switch');
   const themeStyle = document.getElementById('theme-style');
   
   toggleSwitch.addEventListener('change', function() {
@@ -81,5 +83,5 @@ const quotes = [
       themeStyle.href = 'light-mode.css';
     }
   });
-  
-  
+
+*/
