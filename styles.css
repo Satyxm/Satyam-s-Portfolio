@@ -92,6 +92,10 @@ body .namaste {
     position: relative;
 }
 
+.intro-namaste-sec {
+    height: 100vh;
+}
+
 .namaste-icon {
     height: 22px;
     width: 22px;
@@ -268,10 +272,10 @@ header nav .nav-li .logo{
 }
 
 #quote{
-    padding-top: 89px;
+    margin-top: 22px;
     font-size: 14px;
     text-align: center;
-    
+    color: black;
 }
 
 header nav .toggle-btn {
@@ -301,7 +305,95 @@ header nav .toggle-btn {
     padding-top: 25px;
 }
 
-.intro .typical-pfw {
-    padding-top: 95px;
+.typical-pfw {
     font-size: 24px;
+    text-align: center;
 }
+
+.typical-pfw-img {
+    display: block; /* Change to block element */
+    margin: 75px auto; /* Center horizontally and apply top margin */
+    width: 600px;
+    height: auto;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Other styles for header and navigation */
+  
+  #about {
+    padding: 80px;
+    color: black;
+    background-color: whitesmoke;
+    height: 100vh;
+  }
+  
+
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1 {
+    flex-basis: 35%;
+  }
+  
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+  
+  .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .tab-titles {
+    display: flex;
+    margin: 20px 0px 40px;
+  }
+  
+  .tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab-links a{
+   color: black;
+  }
+  
+  /* Other styles for active tab indicator */
+  
+  .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+  }
+  
+  .tab-contents {
+    display: none;
+  }
+  
+  .tab-contents.active-tab {
+    display: block;
+  }
+  
