@@ -1,3 +1,29 @@
+ // Check if the session cookie has been set for the alert
+ var alertCookie = getCookie('alertShown');
+ if (!alertCookie) {
+     // Display the alert message
+     alert("This is a Website. Always use Desktop Site or Landscape mode to view it.");
+     // Set the session cookie for the alert
+     setCookie('alertShown', 'true');
+ }
+
+ // Function to set a session cookie
+ function setCookie(name, value) {
+     document.cookie = name + '=' + value + '; path=/';
+ }
+
+ // Function to get a session cookie
+ function getCookie(name) {
+     var cookies = document.cookie.split('; ');
+     for (var i = 0; i < cookies.length; i++) {
+         var parts = cookies[i].split('=');
+         if (parts[0] === name) {
+             return parts[1];
+         }
+     }
+     return null;
+ }
+
 
 const quotes = [
     
