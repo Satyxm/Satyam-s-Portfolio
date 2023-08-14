@@ -396,4 +396,9 @@ header nav .toggle-btn {
   .tab-contents.active-tab {
     display: block;
   }
+
+  .latest-threads-class {
+    text-align: center;
+   margin-top: 80px;
+  }
   

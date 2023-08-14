@@ -57,3 +57,7 @@ section .pro1-name a {
     border-radius: 22px;
     transition: 0.6s ease-in-out;
 }
+
+.latest-threads-class a{
+   color: orange;
+}
