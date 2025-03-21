@@ -61,3 +61,30 @@ section .pro1-name a {
 .latest-threads-class a{
    color: orange;
 }
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+header {
+    background-color: black;
+}
+
+.nav-li {
+    background-color: black;
+}
+
+.nav-li a {
+    color: white;
+}
+
+.menu-icon {
+    color: white;
+}
+
+

@@ -1,86 +1,175 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: lighter;
+}
+
+html, body {
+  touch-action: manipulation;
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
+:root {
+  --menu-bg: white;
+  --menu-text: black;
+}
+
+.dark-mode {
+  --menu-bg: black;
+  --menu-text: white;
+}
+
+header {
+  position: relative;
+}
 
 header .nav-li {
-    display: flex;
-    justify-content: center;
-    margin-top: 42px;
-    font-family: 'Architects Daughter', cursive;
-   
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+  font-family: 'Architects Daughter', cursive;
 }
 
-header .nav-li li{
-    display: inline-block;
-    padding-right: 41px;
-    font-size: 16px;
-    position: relative;
-    
+header .nav-li li {
+  display: inline-block;
+  padding-right: 41px;
+  font-size: 16px;
+  position: relative;
 }
 
-header .nav-li a{
-    color: white;
+header .nav-li a {
+  color: var(--menu-text);
 }
-
-
-
 
 header .nav-li li:not(.ignored):hover:after {
-    width: 60%;
+  width: 60%;
 }
 
-header .nav-li .toggle-btn {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-  }
-  
-  header .nav-li .toggle-btn input {
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn input {
+  display: none;
+}
+
+.toggle-btn label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn label:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.toggle-btn input:checked + label {
+  background-color: orange;
+}
+
+.toggle-btn input:checked + label:after {
+  left: 22px;
+}
+
+.dark-mode .toggle-btn label {
+  background-color: white !important;
+}
+
+.dark-mode .toggle-btn label:after {
+  background-color: orange !important;
+}
+
+.dark-mode .toggle-btn input:checked + label {
+  background-color: orange !important;
+}
+
+.dark-mode .toggle-btn input:checked + label:after {
+  left: 22px;
+  background-color: white !important;
+}
+
+@media (max-width: 768px) {
+  header .nav-li .toggle-btn {
     display: none;
   }
+}
+
+.nav-li {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 200px;
+  background-color: var(--menu-bg);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   
-  header .nav-li .toggle-btn label {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: #ccc;
-    position: relative;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-li.active {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 999;
+  color: var(--menu-text);
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
   }
-  
-  header .nav-li .toggle-btn label:after {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    transition: left 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-li .logo {
+    display: none;
   }
-  
-  header .nav-li .toggle-btn input:checked + label {
-    background-color: orange;
-  }
-  
-  header .nav-li .toggle-btn input:checked + label:after {
-    left: 22px;
-  }
-  
+}
+
+
 
 body .namaste {
     font-family: 'Architects Daughter', cursive;
@@ -107,6 +196,24 @@ body .namaste {
     width: 50%;
 }
 
+.typical-pfw-img {
+  display: block;
+  margin: 75px auto;
+  max-width: 600px; 
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .typical-pfw-img {
+    max-width: 325px !important; 
+    display: block;  
+    margin: 0 auto;  
+    transform: translateX(5.5px); 
+  }
+}
+
+
+
 
 
 .intro p{
@@ -125,9 +232,7 @@ header .nav-li i {
     font-family: 'Architects Daughter', cursive;
 }
 
-/* 
-This is for the projects section styling.
-*/
+
 
 .projects-heading h1 {
     font-size: 36px;
@@ -311,8 +416,8 @@ header nav .toggle-btn {
 }
 
 .typical-pfw-img {
-    display: block; /* Change to block element */
-    margin: 75px auto; /* Center horizontally and apply top margin */
+    display: block; 
+    margin: 75px auto; 
     width: 600px;
     height: auto;
   }
@@ -324,7 +429,6 @@ header nav .toggle-btn {
   }
   
   
-  /* Other styles for header and navigation */
   
   #about {
     padding: 80px;
@@ -376,8 +480,6 @@ header nav .toggle-btn {
   .tab-links a{
    color: black;
   }
-  
-  /* Other styles for active tab indicator */
   
   .tab-contents ul li {
     list-style: none;

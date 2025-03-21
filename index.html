@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale="1.0", user-scalable="no" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -34,6 +34,9 @@
   <body>
     <header>
       <nav>
+        <div class="menu-icon">
+          <i class="ri-menu-line"></i>
+        </div>
         <ul class="nav-li">
           <li><a class="logo" href="./index.html">SATYAM SINGH</a></li>
           <li><a href="./index.html">Home</a></li>
@@ -42,13 +45,17 @@
           <li><a href="./skills.html">Skills</a></li>
           <li><a href="./articles.html">Articles</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li class="ignored toggle-btn">
-            <input type="checkbox" id="toggle-switch" />
-            <label for="toggle-switch"></label>
-          </li>
+          
         </ul>
+
+        <li class="ignored toggle-btn">
+          <input type="checkbox" id="toggle-switch" />
+          <label for="toggle-switch"></label>
+        </li>
       </nav>
     </header>
+    
+    
     <section class="intro-namaste-sec">
       <img class="typical-pfw-img" src="./assets/rick_sanchez.png" />
       <p class="typical-pfw">
@@ -140,5 +147,7 @@
 
     <script src="./script.js"></script>
     <script src="theme-handler.js"></script>
+    
+    
   </body>
 </html>
